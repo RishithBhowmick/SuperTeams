@@ -21,6 +21,8 @@ SuperTeams
 ├──.gitignore
 ├──package.json
 ├──requirements.txt
+├──data.zip
+├──response.png
 └──README.md
 ```
 
@@ -60,7 +62,7 @@ fastapi dev app.py
 ```bash
 GET /ping
 ```
-Response
+#### Response
 ```
 pong
 ```
@@ -96,7 +98,7 @@ This route trains a FLUX model given the data passed in the request.
   - `file_name` (required) - The file name which contains all the data in zip form, present at the same level as app.py
   - `new_model_name` (required) - The model name where the trained model will be stored
   - `owner` (required) - Owner of the model. This will be the replicate account owner's github username
-  - `trigger_word (required) - A trigger word for required by the model to understand that the desired input images need to be trained against this word. 
+  - `trigger_word` (required) - A trigger word for required by the model to understand that the desired input images need to be trained against this word. 
 
  ### Example Request
  ```
