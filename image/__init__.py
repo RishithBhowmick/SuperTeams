@@ -1,2 +1,2 @@
-from .models import ImageRequest
+from .models import ImageRequest,TrainingRequest
 from .image import Image
